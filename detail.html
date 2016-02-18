@@ -1,19 +1,149 @@
-<!DOCTYPE HTML>
+<ons-page>
+  <ons-page>
+        <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">詳細</div>
+	</ons-toolbar>
+  
+
+	<ons-list-header>植え付け時期</ons-list-header>
+	  <ons-list-item modifier="chevron" onclick="myNavigator.pushPage('detail_tomato.html',{animation:'slide'})">
+      <ons-icon icon="fa-credit-card" size="20px"></ons-icon>
+      じゃがいも
+      </ons-navigator>
+    </ons-list-item>
+
+
+    <ons-list-header>収穫時期</ons-list-header>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-film" size="20px"></ons-icon>
+      トマト
+      <span class="list-item-note lucent">Monaca Legend</span>
+    </ons-list-item>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-music" size="20px"></ons-icon>
+      オクラ
+      <span class="list-item-note lucent">Anatoo Samba</span>
+    </ons-list-item>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-gamepad" size="20px"></ons-icon>
+      とうもろこし
+      <span class="list-item-note lucent">Onsen UI Bros.</span>
+    </ons-list-item>
+
+    <ons-list-header>水やり頻度</ons-list-header>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-cog" size="20px"></ons-icon>
+      さつまいも
+    </ons-list-item>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-minus-circle" size="20px"></ons-icon>
+      かぼちゃ
+    </ons-list-item>
+
+     <ons-list-header>追肥</ons-list-header>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-cog" size="20px"></ons-icon>
+      さつまいも
+    </ons-list-item>
+
+     <ons-list-header>ポイント</ons-list-header>
+
+    <ons-list-item modifier="chevron">
+      <ons-icon icon="fa-cog" size="20px"></ons-icon>
+      人参
+    </ons-list-item>
+
+  </ons-list>
+</ons-page>
+
+<style>
+ons-list-item > ons-icon {
+  margin: 0 4px 0 0;
+  opacity: 0.8;
+}
+
+.list-item-action {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 20px;
+  opacity: 0.3;
+}
+
+.list-item-action > ons-icon {
+  margin-top: 14px;
+}
+
+.list-item-note {
+  position: absolute;
+  right: 36px;
+  top: 0px;
+  font-size: 14px;
+}
+
+.list-item-note > .notification {
+  margin-top: 12px;
+}
+
+.lucent {
+  opacity: 0.4;
+}
+</style>
+
+</ons-page>
+
+
+
+
+
+<!--
+<ons-button>
+<!doctype html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="components/loader.js"></script>
-    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="../onsen-css-components-blue-basic-theme.css">
+    <link rel="stylesheet" href="list_with_header.css">
+
+    <script src="lib/onsen/js/angular/angular.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
     <script>
-        ons.bootstrap();
+      ons.bootstrap();
     </script>
-</head>
-<body>
-    <ons-tabbar>
-        <ons-tab icon="home" label="Home" page="page1.html" active="true"></ons-tab>
-        <ons-tab icon="comment" label="Comments" page="page2.html"></ons-tab>
-        <ons-tab icon="gear" label="Settings" page="page3.html"></ons-tab>
-    </ons-tabbar>
-</body>
+  </head>
+  <body>
+    <ons-page>
+      <ons-toolbar>
+        <div class="center">List With Header</div>
+      </ons-toolbar>
+
+      <ons-list>
+        <ons-list-header>Android Versions</ons-list-header>
+
+        <ons-list-item modifier="chevron">KitKat</ons-list-item>
+        <ons-list-item modifier="chevron">Jelly Bean</ons-list-item>
+        <ons-list-item modifier="chevron">Honycomb</ons-list-item>
+
+        <ons-list-header>Mac OS X Versions</ons-list-header>
+
+        <ons-list-item modifier="chevron">Mavericks</ons-list-item>
+        <ons-list-item modifier="chevron">Mountain Lion</ons-list-item>
+        <ons-list-item modifier="chevron">Lion</ons-list-item>
+        <ons-list-item modifier="chevron">SnowLeopard</ons-list-item>
+
+      </ons-list>
+
+    </ons-page>
+  </body>
 </html>
+
+
+-->
