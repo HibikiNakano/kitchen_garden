@@ -1,75 +1,32 @@
 <ons-page>
-  <ons-page>
-    <ons-toolbar>
-      <div class="left"><ons-back-button>Back</ons-back-button></div>
-      <div class="center"><font size="5" color="#FF0000">トマト</font></div>
-    </ons-toolbar>
+  <ons-toolbar>
+    <div class="left"><ons-back-button>Back</ons-back-button></div>
+    <div class="center"><font size="5" color="#FF0000">トマト</div>
+  </ons-toolbar>
+  <ons-scroller>
+    <ons-list>
+      <ons-list-header>植え込み時期</ons-list-header>
+      <ons-list-item>５月中旬頃</ons-list-item>
+      <ons-list-header>収穫時期</ons-list-header>
+      <ons-list-item>７月〜９月</ons-list-item>
+      <ons-list-header>水やり</ons-list-header>
+      <ons-list-item>毎日</ons-list-item>
+      <ons-list-header>追肥</ons-list-header>
+      <ons-list-item>２週間に１回</ons-list-item>
+      <ons-list-header>ポイント</ons-list-header>
+      <ons-list-item>水をあげすぎない<br>連作障害あり</ons-list-item>
     
-
-    <ons-list-header>植え付け時期</ons-list-header>
-    <ons-list-item modifier="chevron" onclick="myNavigator.pushPage('detail_tomato.html',{animation:'slide'})">
-      ５月中旬頃
-    </ons-list-item>
-    
-    <ons-list-header>収穫時期</ons-list-header>
-    
-    <ons-list-item modifier="chevron">
-      
-      ７月〜９月
-      
-    </ons-list-item>
-
-    
-    <ons-list-header>水やり頻度</ons-list-header>
-
-    <ons-list-item modifier="chevron">
-      毎日
-    </ons-list-item>
-
-    <ons-list-header>追肥</ons-list-header>
-
-    <ons-list-item modifier="chevron">
-      ２週間に１回
-    </ons-list-item>
-
-    <ons-list-header>ポイント</ons-list-header>
-
-    <ons-list-item modifier="chevron">
-      水やりは控えめに<br>連作障害あり
-    </ons-list-item>
-
+<!--
+      <ons-list-header>Tappable Numbers</ons-list-header>
+      <ons-list-item modifier="tappable">Tap Me</ons-list-item>
+      <ons-list-item modifier="tappable">Tap Me</ons-list-item>
+      <ons-list-item modifier="tappable">Tap Me</ons-list-item>
+      <ons-list-item modifier="tappable">Tap Me</ons-list-item>
+      <ons-list-item modifier="tappable">Tap Me</ons-list-item>
+      <ons-list-item modifier="tappable">Tap Me</ons-list-item>
+-->    
 </ons-list>
+  </ons-scroller>
 </ons-page>
 
-<style>
 
-  ons-list-item > ons-icon {
-  margin: 0 4px 0 0;
-  opacity: 0.8;
-  }
-  .list-item-action {
-  position: absolute;
-  right: 10px;
-  top: 0px;
-  font-size: 20px;
-  opacity: 0.3;
-  }
-  .list-item-action > ons-icon {
-  margin-top: 14px;
-  }
-  .list-item-note {
-  position: absolute;
-  right: 36px;
-  top: 0px;
-  font-size: 14px;
-  }
-  .list-item-note > .notification {
-  margin-top: 12px;
-  }
-  .lucent {
-  opacity: 0.4;
-  }
-
-</style>
-
-</ons-page>
