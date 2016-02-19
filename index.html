@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <script src="components/loader.js"></script>
+    <script src="components/jquery-1.12.0.js"></script>
     <script src="components/moment-with-locales.min.js"></script>
 	    <link rel="stylesheet" href="components/loader.css">
 	    <link rel="stylesheet" href="css/style.css">
@@ -14,14 +15,30 @@
 	    </script>
 	    
 	    <script>
-	      
+
+	      <!--育て始めた日付取得-->
 	      function getDate(){
 	      var m = moment();
+	  
 	      var startdate = m.format('YYYY年MM月DD日 HH:mm:ss dddd');
 	      alert(startdate);
 	      };
 
+	      <!--水をあげた日付取得-->
+	      var click = true;
+	      function getWaterDate(){
+	      if(click == true){
+	      var w = moment();
+	      var waterdate = w.format('MM月DD日');
+	      alert(waterdate);
+	      alert("水をあげたよ！！");
+	      click = false;
+	      }
+	      };
 
+	      
+
+	      <!--日付取得＋種類取得＋ページ遷移-->
 	      function dateSetAndPushpage(){
 	      getDate();
 	      alert("日付セット");
