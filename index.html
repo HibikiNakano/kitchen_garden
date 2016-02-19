@@ -19,18 +19,46 @@
 	      <!--育て始めた日付取得-->
 	      function getDate(){
 	      var m = moment();
-	  
-	      var startdate = m.format('YYYY年MM月DD日 HH:mm:ss dddd');
-	      alert(startdate);
+	      var startdate = m.format('YYYY年MM月DD日');
+	      alert("育て始めた日\n"+ startdate);
+	      var startm = m.format('YYYYMMDD');
+	      localStorage.setItem("start",startm);
+	      console.log(startm);
+	   
 	      };
 
 	      <!--水をあげた日付取得-->
-	      var click = true;
 	      function getWaterDate(){
-	      if(click == true){
 	      var w = moment();
-	      var waterdate = w.format('MM月DD日');
-	      alert(waterdate);
+	      var waterdate = w.format('YYYY年MM月DD日');
+	      alert("水をあげた日\n"+ waterdate);
+	      var waterm = w.format('YYYYMMDD');
+	      localStorage.setItem("water",waterm);
+	      console.log(waterm);
+	      
+	      };
+	     
+	      
+	      <!--日数計算-->
+	      function glowDays(){
+	      var s = localStorage.getItem("start");
+	      var w = localStorage.getItem("water");
+	      var days = (w-s)+1;
+	      
+	      console.log(days);
+	     
+	      var content = document.getElementById("day");
+	      content.innerHTML = days+"日目";
+	     	      
+	      };
+	      
+	      
+	      <!--水やりボタン制御＋日付取得-->
+	      var click = true;
+	      function waterBtnPush(){
+	      glowDays();
+	      if(click == true){
+	      getWaterDate();	      
 	      alert("水をあげたよ！！");
 	      click = false;
 	      }
@@ -45,15 +73,11 @@
 	      alert("種類セット");
 	      myNavigator.pushPage('grow.html');
 	      };
-
-	      
-	      
 	    </script>
 	    
 	    
 </head>
 <body>
   <ons-navigator var="myNavigator" page="start.html">
-  </ons-navigator> 
-</body>
+  </ons-navigator></body>
 </html>
